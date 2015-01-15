@@ -4,8 +4,21 @@
  * @return {Number}
  */
 exports.sumOfAMultiple = function(n){
+  
   var sum = 0;
+
+    for (var i = 0; i < n; i++) {
+  // console.log("for:", i);
+
+    if (i % 3 === 0 || i % 5 === 0){
+//console.log("if", i);
+      sum = sum + i;  
+    }
+   
+  }
+  console.log(sum);
   // do your work here
   
   return sum;
 };
+
